@@ -80,4 +80,4 @@ public class NoVolatile implements Runnable {
 - volatile 只能作用于属性，我们用 volatile 修饰属性，这样 compilers 就不会对这个属性做指令重排序。
 - volatile 提供了可见性，任何一个线程对其的修改将立马对其他线程可见。volatile 属性不会被线程缓存，始终从主存中读取。
 - volatile 提供了 happens-before 保证，对 volatile 变量 v 的写入 happens-before 所有其他线程后续对 v 的读操作。
-- volatile 可以使得 long 和 double 的赋值是原子的。
+- volatile 可以使得 long 和 double 的赋值是原子的。  对于64位的long和double，如果没有被volatile修饰，那么对其操作可以不是原子的。在操作的时候，可以分成两步，每次对32位操作。  

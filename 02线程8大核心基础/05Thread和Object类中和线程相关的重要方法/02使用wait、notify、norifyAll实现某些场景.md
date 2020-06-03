@@ -1,4 +1,4 @@
-02使用wait、notify、norifyAll实现某些场景
+# 02使用wait、notify、norifyAll实现某些场景
 
 ## 目录
 

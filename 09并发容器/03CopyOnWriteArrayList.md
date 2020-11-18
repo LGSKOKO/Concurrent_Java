@@ -28,7 +28,7 @@
 - **读写锁规则的升级：读取完全不用加锁，并且更厉害的是写入也不会阻塞读取操作。只有写入和写入之间需要进行同步等待。**
 
 - ```java
-/**
+      /**
        * Appends the specified element to the end of this list.
        *
        * @param e element to be appended to this list
